@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="script.js"></script>
@@ -47,34 +46,123 @@
         </div>
       </section>
       <section id="section02">
-        <h2>parte 02</h2>
+        <h2 class="tec-title">Motos</h2>
+        <div class="wrap-tecs">
+          <div>
+            <img
+              width="100px"
+              height="auto"
+              src="Assets/sonic.jpg"
+              alt=""
+            />
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis temporibus fugiat odio, dicta tempora, cumque nulla a,
+              delectus est optio doloribus soluta sit culpa natus! Repellat,
+              quae! Nam, optio et.
+            </p>
+          </div>
+          <div>
+            <img
+              width="100px"
+              height="auto"
+              src="Assets/xj6.webp"
+              alt=""
+            />
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis temporibus fugiat odio, dicta tempora, cumque nulla a,
+              delectus est optio doloribus soluta sit culpa natus! Repellat,
+              quae! Nam, optio et.
+            </p>
+          </div>
+          <div>
+            <img
+              width="100px"
+              height="auto"
+              src="Assets/s1000rr.jpg"
+              alt=""
+            />
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis temporibus fugiat odio, dicta tempora, cumque nulla a,
+              delectus est optio doloribus soluta sit culpa natus! Repellat,
+              quae! Nam, optio et.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="section03">
-        <h2>parte 03</h2>
+        <div class="Ativ">
+          <h2>WE DESIGN YOUR SPACE</h2></br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Consequatur sed quas animi dolor aspernatur reiciendis consequuntur, 
+             dolorum quam doloribus sit aliquam neque eveniet aliquid atque ab
+              debitis minima amet labore.</p></br></br>
+          <button onclick="projeto()">SEE OUR PROJECTS</button>
+        </div>
       </section>
       <section id="section04">
         <div class="left-contact">
           <h2 class="heading-contact">Contato</h2>
-          <div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 0.5vh;
+              position: relative;
+            "
+          >
             <label for="nome">Nome</label>
             <input type="text" id="nome" />
           </div>
-          <div>
+          <div style="display: flex; flex-direction: column; gap: 0.5vh">
             <label for="mensagem">Mensagem</label>
             <input type="text" id="mensagem" />
           </div>
+          <br />
           <button onclick="conferirMensagemWhatsApp()">
             Conferir Mensagem
           </button>
         </div>
-        <div class="right-contact">
+        <div class="right-contact" id="rightDiv">
           <div>
             <p>Nome: <span id="confNome"></span></p>
-            <p>Mensagem: <span id="confMsg"></span></p>
+            <br />
+            <p class="text">Mensagem: <span id="confMsg"></span></p>
           </div>
           <button onclick="enviar()">ZAP</button>
         </div>
       </section>
+      <footer>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><p style="color: white">Instagram</p>
+          <img
+            width="40px"
+            height="40px"
+            src="Assets/inst.png"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><p style="color: white">Facebook</p>
+          <img
+            width="40px"
+            height="40px"
+            src="Assets/face.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://x.com/?lang=pt-br" target="_blank"
+          ><p style="color: white">Twiter</p>
+          <img
+            width="40px"
+            height="40px"
+            src="Assets/x.avif"
+            alt="Twiter"
+        /></a>
+      </footer>
     </main>
   </body>
 </html>
